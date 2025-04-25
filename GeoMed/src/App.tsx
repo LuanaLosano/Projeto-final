@@ -1,13 +1,18 @@
-import { Provider } from "./components/ui/provider"
-
-
-function App(){
+import { Provider } from './components/ui/provider';
+import { Box,} from '@chakra-ui/react';
+import { Home } from "./pages/Home";
+function App() {
 
   return (
-   <Provider>
-    
-   </Provider>
-  )
-}
+   
+    <Provider>
+       <Box>
+          <Home/>
+       </Box>
+    </Provider>
+  
+   
+  );
+};
 
-export default App
+export default App;
